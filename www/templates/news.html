@@ -1,0 +1,28 @@
+<ion-view class="feeds-categories-view">
+  <ion-nav-buttons side="left">
+
+  </ion-nav-buttons>
+  <ion-nav-title>
+    <span>News Categories</span>
+  </ion-nav-title>
+  <ion-content>
+
+      <ul class="list">
+      <div ng-repeat="category in feeds_categories" >
+
+        <a class="item item-thumbnail-left" href="#">
+            <img class="item-image" style = "border-radius:0%;" ng-src="{{category.image}}" spinner-on-load>
+          <h2>{{category.title}}</h2>
+          <p>&nbsp;</p>
+        </a>
+
+<br>
+
+
+      </div>
+      </ul>
+
+
+
+  </ion-content>
+</ion-view>

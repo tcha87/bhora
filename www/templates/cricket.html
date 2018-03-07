@@ -1,0 +1,57 @@
+<ion-view view-title="Cricket ">
+  <ion-content class="padding">
+    <div class="list card" ng-repeat = "item in result">
+
+      <div class="item item-avatar">
+          <img class="full-image" src="{{item.imgsrc}}">
+        <h2>{{item.title}}</h2>
+        <p>November 05, 1955</p>
+      </div>
+
+      <div class="item item-body">
+        <img class="full-image" src="{{item.imgsrc}}">
+        <p>
+          {{item.shortdesc}}
+        </p>
+        <p>
+          <a href="#" class="subdued">1 Like</a>
+          <a href="#" class="subdued">5 Comments</a>
+        </p>
+      </div>
+
+    </div>
+  </ion-content>
+
+
+    <ion-tabs class="tabs-assertive tabs-icon-top">
+
+      <ion-tab title="Live" icon-on="ion-ios-monitor"  href="#/app/cricket-live" icon-off="ion-ios-monitor-outline">
+
+      </ion-tab>
+
+      <ion-tab title="News" icon-on="ion-ios-paper"  href="#/app/cricket-live" icon-off="ion-ios-paper-outline">
+
+      </ion-tab>
+
+      <ion-tab title="Fixtures" icon-on="ion-ios-football"  href="#/app/matches" icon-off="ion-ios-football-outline">
+        <!-- Tab 1 content -->
+      </ion-tab>
+
+      <ion-tab title="Ranking" icon-on="ion-ios-people"  href="#/app/players" icon-off="ion-ios-people-outline">
+        <!-- Tab 2 content -->
+      </ion-tab>
+
+      <ion-tab title="Fan Club" icon-on="ion-chatbubble"  href="#/app/forum" icon-off="ion-chatbubble-working">
+        <!-- Tab 3 content -->
+      </ion-tab>
+
+      <ion-tab title="Highlights" icon-on="ion-ios-videocam"  href="#/app/forum" icon-off="ion-ios-videocam-outline">
+        <!-- Tab 3 content -->
+      </ion-tab>
+
+
+
+
+
+    </ion-tabs>
+</ion-view>
